@@ -1,0 +1,579 @@
+@import url('clash-display.css');
+
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2E66EE;
+    font-family: ClashDisplay-Medium;
+    height: 800vh;
+    overflow-x: hidden,
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    gap: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+.gras {
+    font-family: ClashDisplay-SemiBold;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 150px;
+    color: #2E66EE;
+}
+
+.rectangle {
+    height: 110vh;
+    border-radius: 3% 3% 0% 0%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: ClashDisplay-Bold;
+
+}
+
+.principale {
+    font-size: 150px;
+    line-height: 0.9;
+    margin-left: -50px;
+}
+
+.info {
+    font-family: ClashDisplay-Medium;
+    margin-left: -50px;
+}
+
+span {
+    color: #2E66EE;
+}
+
+.logo {
+    height: 40vh;
+    width: 40vh;
+}
+
+.cache {
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: #2E66EE;
+}
+
+.slider {
+    --taille-enfant: 2000px;
+    display: flex;
+    width: calc(var(--taille-enfant) * 2);
+    animation: scroll 10s linear infinite;
+}
+
+.déroulement {
+    width: var(--taille-enfant);
+    color: white;
+    font-size: 40px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.page1 {
+    height: 100vh;
+    background-color: white;
+}
+
+.paragraphe {
+    padding: 20px;
+}
+
+.space {
+    padding-top: 30px;
+}
+
+.contenu {
+    padding: 100px;
+}
+
+.page2 {
+    background-color: black;
+    height: 120vh;
+
+}
+.container-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.project {
+    height: 60vh;
+    width: 1310px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.work {
+    height: 45vh;
+    width: 35vh;
+    background-color: gainsboro;
+    padding: 50px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.work2 {
+    height: 55vh;
+    width: 35vh;
+    background-color: gainsboro;
+    padding: 50px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+li {
+    color: white;
+}
+
+.annee {
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+    font-family: ClashDisplay-Semibold;
+}
+
+.annee1 {
+    margin-top: 30px;
+    display: flex;
+    font-family: ClashDisplay-Semibold;
+}
+
+.annee2 {
+    display: flex;
+    justify-content: right;
+}
+
+.page3 {
+    height: 250vh;
+    background-color: white;
+}
+
+.page4 {
+    height: 150vh;
+    background-color: black;
+}
+
+.rep {
+    font-size: 20px;
+}
+
+.rep2 {
+    font-size: 40px;
+    font-family: ClashDisplay-Semibold;
+}
+
+.rep3 {
+    color: white;
+    font-size: 20px;
+    font-family: ClashDisplay-Medium;
+}
+
+.rep4 {
+    color: white;
+    font-size: 40px;
+    font-family: ClashDisplay-Semibold;
+}
+
+.rep5 {
+    font-size: 20px;
+}
+
+.rep6 {
+    font-size: 40px;
+    font-family: ClashDisplay-Semibold;
+}
+
+.rep7 {
+    color: white;
+    font-size: 20px;
+}
+
+.rep8 {
+    color: white;
+    font-size: 40px;
+    font-family: ClashDisplay-Semibold;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: descendMonde 1s ease-in-out infinite;
+}
+
+@keyframes descendMonde {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+}
+
+
+
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    background-color: white;
+    height: 60vh;
+    width: 35vh;
+    border: solid #2E66EE 2px;
+    border-radius: 20px;
+}
+
+.page5 {
+    height: 100vh;
+    background-color: white;
+    padding: 200px;
+    background-image: url(/image/Groupe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.end {
+    font-family: ClashDisplay-Bold;
+    font-size: 20vh;
+    color: white;
+}
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.button {
+    color: white;
+    height: 8vh;
+    width: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.button2 {
+    color: black;
+    border-radius: 20px;
+    height: 8vh;
+    width: 30vh;
+    border: solid black 2px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+footer {
+    height: 20vh;
+    background-color: white;
+}
+
+.container9 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container4 {
+    margin-top: 20px;
+}
+.container7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 170px;
+}
+.circle {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+    background-color: gainsboro;
+    border: solid black 2px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 5s linear infinite;
+    overflow-x: hidden;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.more {
+    position: relative;
+    top: 20px;
+    left: 35px;
+}
+
+.fleche {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+}
+
+.photo1 {
+    background-image: url(/image/Yann\ Sérieux.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo1:hover {
+    background-image: url(/image/Yann\ Taff.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo2 {
+    background-image: url(/image/Lina\ Sérieuse\ .jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo2:hover {
+    background-image: url(/image/Lina\ Taff.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo3 {
+    background-image: url(/image/Noam\ Sérieux.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo3:hover {
+    background-image: url(/image/Noam\ Regard.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo4 {
+    background-image: url(/image/DSC07280-Enhanced-NR.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.photo4:hover {
+    background-image: url(/image/Maxime\ Taff.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+
+.rôle {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    display: none;
+}
+
+.cadre {
+    height: 30px;
+    width: 150px;
+    color: white;
+    background-color: #2E66EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: block;
+}
+
+.container-photo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.photo {
+    position: relative; /* Positionnement pour le texte */
+    width: 250px; /* Taille des photos */
+    height: 400px; /* Hauteur des photos */
+    background-color: #222; /* Fond sombre par défaut */
+    border-radius: 10px;
+    overflow: hidden; /* Évite les débordements */
+    cursor: pointer; /* Interaction */
+    background-size: cover; /* Ajuste l'image pour couvrir l'espace */
+    background-position: center; /* Centre l'image */
+    transition: transform 0.3s ease; /* Animation légère */
+}
+
+/* Effet zoom au survol */
+.photo:hover {
+    transform: scale(1.05); /* Zoom léger */
+}
+
+/* Applique des images spécifiques aux photos */
+.photo1 {
+    background-image: url(/image/Yann\ Sérieux.jpg); /* Remplace par ton image */
+}
+
+.photo2 {
+    background-image: url(/image/Lina\ Sérieuse\ .jpg);
+}
+
+.photo3 {
+    background-image: url(/image/Noam\ Sérieux.jpg);
+}
+
+.photo4 {
+    background-image: url(/image/DSC07280-Enhanced-NR.jpg);
+}
+
+/* Texte qui apparaît */
+.rôle {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color:white ; 
+    color: black;
+    padding: 8px 12px; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: none; 
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.photo:hover .rôle {
+    display: block; 
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0); 
+    }
+}
+
+.container7 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cadre {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #2E66EE;
+    padding: 15px 0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+}
